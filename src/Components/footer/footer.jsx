@@ -4,10 +4,19 @@ import  "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-col col-info-contact">راه های ارتباطی
+      <div className="footer-col col-info-contact">
+        <h3 className="info-contact-title">راه های ارتباطی</h3>
         <div className="info-contact-tel">
-        <i class="fa fa-phone"></i>
-          <div>0912 450 45010</div>
+          <div className="info-text">0912 450 45010</div>
+          <i class="fa fa-phone"></i>
+        </div>
+        <div className="info-contact-email">
+          <div className="info-text">smartbike@gmail.com</div>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div className="info-contact-map">
+          <div className="info-text">تهران ، سعادت آباد</div>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
         </div>
         <div></div>
         <div></div>
@@ -18,10 +27,14 @@ const Footer = () => {
           <i class="fab fa-instagram"></i>
         </div>
       </div>
-      <div className="footer-col col-info-links">دسترسی سریع
-        <div>محصولات</div>
-        <div>تماس با ما</div>
-        <div>درباره ما</div>
+      <div className="footer-col col-info-links">
+        <h3 className="info-links-title">دسترسی سریع</h3>
+        <div>
+          <div className="info-links-text">محصولات</div>
+          <div className="info-links-text">تماس با ما</div>
+          <div className="info-links-text">درباره ما</div>
+        </div>
+        
       </div>
       <div className="footer-col col-info-about"> 
         <h3>ETI TECH</h3>
