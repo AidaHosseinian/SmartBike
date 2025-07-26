@@ -4,7 +4,7 @@ const path = './version.json';
 const data = JSON.parse(fs.readFileSync(path));
 let { patch } = data;
 
-patch += 1; // Bump patch version
+//patch += 1; // Bump patch version
 data.patch = patch;
 
 fs.writeFileSync(path, JSON.stringify(data, null, 2));
