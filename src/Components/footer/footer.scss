@@ -2,38 +2,44 @@
     background-color: #1f1f21;
     color: azure;
     padding: 2rem 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
 
-    
+    .footer-container {
+      max-width: 75rem;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      h3 {
+        padding: 15px;
+      }
+
       .footer-col.col-info-contact,
-      .footer-col.col-info-links,
       .footer-col.col-info-about  {
         flex: 1 1 calc(33.333% - 2rem);
-        text-align: right;
+        text-align: center;
       }
 
       .footer-col.col-info-links {
+        flex: 1 1 calc(23.333% - 2rem);
         text-align: center;
-
-        .info-links-title {
-          font-size: 18px;
-          padding: 5px;
-        }
 
         .info-links-text:hover {
             color: #ff4c29;
         }
       }
 
-      .info-contact-title {
-        font-size: 18px;
+      .footer-col.col-info-about {
+        h3 {
+          text-align: right;
+        }
       }
+
+      
 
       .info-title, .info-contact-tel, .info-contact-email, .info-contact-map {
         display: flex;
-        justify-content: right;
+        justify-content: center;
         align-items: center;
         padding: 5px;
 
@@ -60,7 +66,7 @@
       .col-social-icons {
         flex: 1 1 100%;
         margin-top: 30px;
-        text-align: right;
+        text-align: center;
 
         i {
           width: 30px;
@@ -83,27 +89,39 @@
         color: #454545;
       }
 }
+}
 
-@media (max-width: 650px) {
+@media (max-width: 670px) {
   .footer {
-    flex-direction: column;
-    .footer-col.col-info-about {
-      order: 1;
+    .footer-container {
+      max-width: 100%;
+      flex-direction: column;
 
-      h3 {
-        margin-bottom: 5px;
+      .footer-col.col-info-about {
+        order: 1;
+
+        h3 {
+          margin-bottom: 5px;
+        }
       }
-    }
-    .footer-col.col-info-contact {
-      order: 3;
-    }
-    .footer-col.col-info-links {
-      order: 2;
-      text-align: right;
-    }
+      .footer-col.col-info-contact {
+        order: 3;
+        text-align: right;
 
-    .footer-col.col-copy {
-      order: 4;
+        .info-contact-tel, .info-text, .info-contact-email, .info-contact-map {
+          justify-content: right;
+        }
+      }
+      .footer-col.col-info-links {
+        order: 2;
+        text-align: right;
+      }
+
+      .footer-col.col-copy {
+        order: 4;
+      }
     }
   }
 }
+    
+    

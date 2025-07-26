@@ -4,6 +4,7 @@ import  "./footer.scss";
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="footer-container">
       <div className="footer-col col-info-contact">
         <h3 className="info-contact-title">راه های ارتباطی</h3>
         <div className="info-contact-tel">
@@ -44,6 +45,7 @@ const Footer = () => {
         </p>      
       </div>
       <div className="footer-col col-copy">کلیه حقوق برای اتی تک محفوظ است.</div>
+      </div>
     </footer>
   );
 };
