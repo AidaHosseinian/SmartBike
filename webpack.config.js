@@ -15,7 +15,7 @@ module.exports = ({ mode } = { mode: "production" }) => {
                 historyApiFallback:true
             },
             output: {
-                publicPath: "",
+                publicPath: "/SmartBike/build/0.0.3/",
                 path: path.resolve(__dirname, `build/${buildVersion}`),
                 filename: `assets/bundle.${buildVersion}.js`,
             },
